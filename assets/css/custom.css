@@ -1,0 +1,16 @@
+.st_ico {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 100px;
+    background:grey;
+}
+
+.st_done { background:#61AE41; }
+.st_complain { background:#E6AE30; }
+.st_progress { background:#F81F58;}

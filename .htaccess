@@ -1,0 +1,15 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule api_keluhan             helper/api_keluhan.php
+RewriteRule auth/(.*)$              helper/app_auth.php?action=$1
+
+RewriteRule preview/(.*)$           preview_attachment.php?param=$1
+
+RewriteRule dashboard_login         dashboard/dash-login.php
+RewriteRule dashboard_api           dashboard/dash-api.php
+RewriteRule dashboard_marketing     dashboard/dash-marketing.php
+RewriteRule dashboard_resto         dashboard/dash-resto.php
+RewriteRule dashboard_chart         dashboard/dash-chart.php
+RewriteRule dashboard_detail/(.*)$  dashboard/dash-detail.php?id=$1

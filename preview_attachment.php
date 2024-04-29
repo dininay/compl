@@ -1,0 +1,1 @@
+<iframe width="100%" height="99%" src="<?php echo base64_decode($_GET['param']) ?>"></iframe>
